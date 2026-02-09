@@ -1,0 +1,68 @@
+.featuresSection {
+    background: var(--bg-white);
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.featureCard {
+    padding: 32px;
+    background: white;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-normal);
+}
+
+.featureCard:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary);
+}
+
+.featureCardIcon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light);
+    border-radius: var(--radius-lg);
+    margin-bottom: 20px;
+    transition: all var(--transition-normal);
+}
+
+.featureCard:hover .featureCardIcon {
+    background: var(--primary);
+}
+
+.featureCardIcon svg {
+    width: 28px;
+    height: 28px;
+    color: var(--primary);
+    transition: all var(--transition-normal);
+}
+
+.featureCard:hover .featureCardIcon svg {
+    color: white;
+}
+
+.featureCard h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.featureCard p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .featuresGrid {
+        grid-template-columns: 1fr;
+    }
+}

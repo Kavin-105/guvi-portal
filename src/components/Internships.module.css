@@ -1,0 +1,117 @@
+.internshipsSection {
+    background: var(--bg-white);
+}
+
+.internshipFeatures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.internshipCard {
+    padding: 40px;
+    background: white;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-normal);
+}
+
+.internshipCard:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.internshipIcon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light);
+    border-radius: var(--radius-lg);
+    margin-bottom: 24px;
+}
+
+.internshipIcon svg {
+    width: 32px;
+    height: 32px;
+    color: var(--primary);
+}
+
+.internshipCard h3 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+}
+
+.internshipCard>p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.internshipPerks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.internshipPerks li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.check {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.hiringPartners {
+    text-align: center;
+    padding: 48px;
+    background: var(--bg-light);
+    border-radius: var(--radius-xl);
+}
+
+.hiringPartners h4 {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 32px;
+}
+
+.partnersScroll {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.partnerLogo {
+    padding: 16px 32px;
+    background: white;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.partnerLogo:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+@media (max-width: 480px) {
+    .internshipFeatures {
+        grid-template-columns: 1fr;
+    }
+}

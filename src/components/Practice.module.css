@@ -1,0 +1,144 @@
+.practiceSection {
+    background: var(--bg-light);
+}
+
+.practiceContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.practiceText .section-tag,
+.practiceText .section-title,
+.practiceText .section-subtitle {
+    text-align: left;
+}
+
+.practiceText .section-subtitle {
+    margin-bottom: 32px;
+}
+
+.featureList {
+    margin-bottom: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+.featureList li {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.featureIcon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.featureIcon svg {
+    width: 16px;
+    height: 16px;
+    color: white;
+}
+
+.featureList strong {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.featureList p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Code Editor Mockup */
+.codeEditorMockup {
+    background: var(--secondary);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.editorHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    background: var(--secondary-light);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.editorDots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red {
+    background: #ff5f56;
+}
+
+.yellow {
+    background: #ffbd2e;
+}
+
+.greenDot {
+    background: #27ca40;
+}
+
+.editorTitle {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.editorContent {
+    padding: 24px;
+}
+
+.editorContent pre {
+    font-family: 'Fira Code', 'Monaco', monospace;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.editorContent code {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.editorOutput {
+    padding: 16px 24px;
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.outputSuccess {
+    color: #4ade80;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+    .practiceContent {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .practiceVisual {
+        order: -1;
+    }
+}

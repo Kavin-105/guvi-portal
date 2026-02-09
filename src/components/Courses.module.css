@@ -1,0 +1,95 @@
+.coursesSection {
+    background: var(--bg-white);
+}
+
+.coursesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.courseCard {
+    position: relative;
+    padding: 32px;
+    background: white;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-normal);
+}
+
+.courseCard:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary);
+}
+
+.courseCard.featured {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border-color: var(--primary);
+}
+
+.courseBadge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 6px 12px;
+    background: var(--primary);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+}
+
+.courseIcon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light);
+    border-radius: var(--radius-lg);
+    margin-bottom: 20px;
+}
+
+.courseIcon svg {
+    width: 28px;
+    height: 28px;
+    color: var(--primary);
+}
+
+.courseTitle {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.courseDesc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.courseMeta {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.courseMeta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.courseMeta svg {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 480px) {
+    .coursesGrid {
+        grid-template-columns: 1fr;
+    }
+}
